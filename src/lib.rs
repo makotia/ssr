@@ -1,7 +1,7 @@
 extern crate image;
 use image::imageops;
 
-pub fn crop_image(img_path: &String) {
+pub fn crop_image(img_path: &str) {
     let img = image::open(&img_path).unwrap();
     let mut img = img.to_rgb8();
 
